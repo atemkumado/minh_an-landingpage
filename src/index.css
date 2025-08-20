@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+* {
+  font-family: 'Montserrat';
+}
+
+.font-arimo {
+  font-family: 'Arimo', sans-serif;
+}
+
+.font-public_sans {
+  font-family: 'Public Sans', sans-serif;
+}
+
+.font-josefin {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.font-merriweather {
+  font-family: 'Merriweather', serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}

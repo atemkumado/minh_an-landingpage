@@ -16,23 +16,23 @@ const Navbar = () => {
   return (
     <div className='absolute top-0 left-0 w-full z-10'>
         <div className='container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent'>
-            <div><img src={assets.logo_no_text} alt="" className='w-20' /><span className='text-white font-semibold pl-3'>Minh An</span></div>
+            <div><img src={assets.logo_no_text} alt="" className='w-20' /><span className='text-white font-semibold pl-3'>M.A Renovation</span></div>
             <ul className='hidden md:flex gap-7 text-white'>
                 <a
                   href='#About'
-                  className='cursor-pointer hover:text-gray-400 rounded-full px-5 py-2 transition hover:bg-white/10'
+                  className='cursor-pointer hover:text-gray-400 rounded-full px-5 py-2 transition hover:bg-white/10 font-oswald uppercase font-bold'
                 >
                   Giới thiệu
                 </a>
                 <a
                   href='#Service'
-                  className='cursor-pointer hover:text-gray-400 rounded-full px-5 py-2 transition hover:bg-white/10'
+                  className='cursor-pointer hover:text-gray-400 rounded-full px-5 py-2 transition hover:bg-white/10 font-oswald uppercase font-bold'
                 >
                   Dịch vụ
                 </a>
                 <a
                   href='#Projects'
-                  className='cursor-pointer hover:text-gray-400 rounded-full px-5 py-2 transition hover:bg-white/10'
+                  className='cursor-pointer hover:text-gray-400 rounded-full px-5 py-2 transition hover:bg-white/10  font-oswald uppercase font-bold'
                 >
                   Dự án
                 </a>

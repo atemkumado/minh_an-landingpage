@@ -1,46 +1,110 @@
-import React from 'react'
-import { assets } from '../assets/assets'
+import React from "react";
+import { assets } from "../assets/assets";
 
 export const About = () => {
+  const [open, setOpen] = React.useState(false);
+
   return (
-    <div className='flex flex-col items-center justify-center container mx-auto 
-    p-14 md:px-20 lg:px-32 w-full overflow-hidden' id='About'>
-        <h1 className='text-2xl sm:text-4xl font-semibold mb-2 font-montserrat'>Giới thiệu
-            <span className='underline underline-offset-6 decoration-2 under font-light font-montserrat decoration-orange-400 ml-2'>Minh An</span>
-        </h1>
-        <p className='text-gray-500 max-w-120 text-center mb-8 '>Giải pháp nội thất tối ưu, đồng hành cùng tổ ấm Việt.</p>
-        <div className="flex flex-col md:flex-row items-center md:items-start md:gap-20">
-            <img src={assets.brand_img} alt=""  className='w-full sm:w-1/2 max-w-lg'/>
-            <div name="about-info" className="flex flex-col items-center md:items-start mt-10 text-gray-600">
-                <div className="grid grid-cols-2 gap-6 md:gap-10 w-full 2xl:pr-28 mb-2">
-                    <div className="flex flex-col items-start pr-10">
-                        <span className="text-3xl text-gray-800 mb-2 font-bold">10+</span>
-                        <span className="font-semibold mb-1 text-sm md:text-base">Năm kinh nghiệm</span>
-                        <span className="hidden md:inline text-gray-500 text-sm pr-10">Tư vấn & thi công nội thất chuyên nghiệp</span>
-                    </div>
-                    <div className="flex flex-col items-start">
-                        <span className="text-3xl text-gray-800 mb-2 font-bold">200+</span>
-                        <span className="font-semibold mb-1 text-sm md:text-base">Dự án hoàn thiện</span>
-                        <span className="hidden md:inline text-gray-500 text-sm pr-10">Đa dạng phong cách, đáp ứng mọi nhu cầu</span>
-                    </div>
-                    <div className="flex flex-col items-start">
-                        <span className="text-3xl text-gray-800 mb-2 font-bold">Uy tín</span>
-                        <span className="font-semibold mb-1 text-sm md:text-base">Đối tác tin cậy</span>
-                        <span className="hidden md:inline text-gray-500 text-sm pr-15">98% khách hàng hài lòng và giới thiệu cho người thân</span>
-                    </div>
-                    <div className="flex flex-col items-start">
-                        <span className="text-3xl text-gray-800 mb-2 font-bold">Trọn gói</span>
-                        <span className="font-semibold mb-1 md:whitespace-nowrap text-sm md:text-base">Tư vấn - Thiết kế - Thi công</span>
-                        <span className="hidden md:inline text-gray-500 text-sm pr-15">Đồng hành cùng khách hàng từ A đến Z</span>
-                    </div>
-                </div>
-                <div className="hidden md:inline border-t-2  border-cyan-900 w-12 rounded-full mt-8 mb-1"></div>
-                <p className='my-4 max-w-lg '>
-                    Minh An chuyên cải tạo và làm mới nội thất trọn gói cho nhà và căn hộ lâu năm, với hình ảnh và video thi công thực tế tạo niềm tin tuyệt đối cho khách hàng.
-                </p>
-            </div>
-           
+    <section className="flex flex-col md:flex-row  min-h-[70vh] gap-10 py-10 px-2 md:px-8 bg-gray-50 relative">
+      {/* Project image + Play Icon, bên trái lớn hơn */}
+      <div className="w-full md:w-3/5 flex justify-center items-center">
+        <div className="relative w-full max-w-3xl">
+          <img
+            src={assets.about_us}
+            alt="Dự án tiêu biểu"
+            className="rounded-xl shadow-xl object-cover w-full h-[300px] md:h-[640px]"
+          />
+          {/* Play button - gọn lại */}
+          <button
+            onClick={() => setOpen(true)}
+            className="absolute inset-0 flex justify-center items-center"
+          >
+            <span className="bg-cyan-600 flex items-center justify-center rounded-full w-14 h-14 hover:bg-cyan-700 transition-colors">
+              <svg
+                className="w-7 h-7 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <polygon points="8,5 20,12 8,19" fill="white" />
+              </svg>
+            </span>
+          </button>
         </div>
+      </div>
+
+      {/* About Box phải, responsive, không fix width, bo góc đẹp */}
+      <div className="w-full md:w-2/5 md:max-w-md bg-white rounded-xl shadow-2xl py-8 px-6 mt-8 md:mt-0">
+        <p className="text-sm tracking-widest text-gray-500 mb-2 uppercase">
+          Giới Thiệu
+        </p>
+        <h2 className="text-3xl font-bold mb-3 text-slate-900">Về Chúng Tôi</h2>
+
+        <p className="mb-3 text-gray-700">
+          M.A Renovation ra đời với mong muốn mang lại không gian sống mới mẻ và
+          tiện nghi cho những ngôi nhà đã cũ. Chúng tôi tin rằng, một tổ ấm đẹp
+          và gọn gàng sẽ giúp gia chủ tận hưởng cuộc sống trọn vẹn hơn.
+        </p>
+        <p className="mb-3 text-gray-700">
+          Đi cùng phương châm <b>“Đổi mới không gian, an tâm chi phí”</b>, M.A
+          Renovation luôn nỗ lực mang đến giải pháp cải tạo phù hợp, đảm bảo cả
+          thẩm mỹ lẫn ngân sách. Khách hàng có thể yên tâm khi mỗi hạng mục đều
+          được tư vấn rõ ràng, minh bạch và tối ưu.
+        </p>
+        <p className="mb-3 text-gray-700">
+          Điểm khác biệt của chúng tôi nằm ở việc lắng nghe nhu cầu, đưa ra lựa
+          chọn phù hợp với từng khách hàng và đồng hành đến khi không gian sống
+          thật sự hoàn thiện. Chúng tôi không chỉ thi công, mà còn đồng hành để
+          tái tạo lại “tổ ấm” cho bạn.
+        </p>
+
+        <div className="flex items-center gap-3 mt-3">
+          <img
+            src={assets.founder}
+            alt="Founder"
+            className="w-12 h-12 rounded-full object-cover"
+          />
+          <div>
+            <div className="font-bold leading-none">M.A Renovation</div>
+            <div className="text-xs text-gray-500">FOUNDER & CEO</div>
+          </div>
+        </div>
+      </div>
+
+      {/* YouTube Video Popup */}
+{open && (
+  <div
+    className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+    onClick={() => setOpen(false)}
+  >
+    <div
+      className="relative"
+      onClick={e => e.stopPropagation()} // Chặn sự kiện lây lan lên overlay
+    >
+      <iframe
+        src="https://www.youtube.com/embed/xPkymyihX-Q?autoplay=1"
+        title="Project Video"
+        allow="autoplay"
+        allowFullScreen
+        className="w-[95vw] max-w-[900px] h-[54vw] max-h-[520px] rounded-2xl shadow-2xl"
+      ></iframe>
+      <button
+        onClick={() => setOpen(false)}
+        className="absolute -top-7 -right-4 rounded-full text-gray-300 px-3 py-2 shadow-lg bg-gray-600/30 font-merriweather hover:bg-gray-600/50 transition-colors" 
+      >
+        ✕
+      </button>
     </div>
-  )
+  </div>
+)}
+    </section>
+  );
+};
+
+function Stat({ number, label }) {
+  return (
+    <div className="bg-white rounded shadow-md px-6 py-4 w-40">
+      <div className="font-extrabold text-2xl text-blue-800">{number}</div>
+      <div className="text-gray-500 text-sm">{label}</div>
+    </div>
+  );
 }

@@ -10,10 +10,10 @@ export const Header = () => {
     >
       <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
       <Navbar />
-      <div className='container text-center  mx-auto py-4 px-6 md:px-20 lg:px-32 text-white relative'>
-        <h2 className='text-4xl sm:text-6xl md:text-[60px] inline-block max-w-3xl font-semibold pt-20'>Nâng tầm không gian sống của bạn</h2>
+      <div className='container  mx-auto py-4 px-6 md:px-20 lg:px-32 text-white relative'>
+        <h2 className='text-4xl sm:text-6xl md:text-[84px] inline-block font-oswald font-semibold pt-20'>Đổi mới không gian, an tâm chi phí</h2>
         <div className='space-x-6 mt-12'>
-          <a href="" className='border border-white px-8 py-3 rounded'>Dự án</a>
+          <a href="#Projects" className='border border-white px-8 py-3 rounded'>Dự án</a>
           <a href="" className='bg-orange-500 px-8 py-3 rounded'>Liên hệ</a>
         </div>
       </div>

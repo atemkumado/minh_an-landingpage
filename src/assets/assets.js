@@ -14,6 +14,7 @@ import project_img_3 from "./project_img_3.jpg";
 import project_img_4 from "./project_img_4.jpg";
 import project_img_5 from "./project_img_5.jpg";
 import project_img_6 from "./project_img_6.jpg";
+import reasons from "./reasons.jpg";
 import profile_img_1 from "./profile_img_1.png";
 import profile_img_2 from "./profile_img_2.png";
 import profile_img_3 from "./profile_img_3.png";
@@ -43,6 +44,7 @@ export const assets = {
   project_img_2,
   project_img_3,
   project_img_4,
+  reasons,
   left_arrow,
   right_arrow,
   founder,
@@ -143,7 +145,7 @@ export const SERVICES = [
     icon: icon_service_plan, // hoặc đường dẫn svg tương ứng bạn có
   },
   {
-    title: "Cải tạo & xây dựng lại không gian",
+    title: "Cải tạo & xây dựng không gian",
     desc: "Tối ưu diện tích, bố trí lại công năng và thay đổi tổng thể để ngôi nhà trở nên tiện ích và hiện đại hơn.",
     icon: icon_service_build,
   },

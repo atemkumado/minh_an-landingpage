@@ -3,8 +3,8 @@ import { assets, SERVICES } from "../assets/assets";
 
 export const Services = () => {
   return (
-    <section className="w-full bg-white py-16 px-4 md:px-0 flex justify-center">
-      <div className="max-w-7xl w-full flex flex-col md:flex-row gap-10 md:gap-20">
+    <section id="Services" className="w-full  bg-white py-16 px-4 md:px-0 flex justify-center">
+      <div className="max-w-7xl p-6 w-full flex flex-col md:flex-row gap-10 md:gap-20">
         {/* Bên trái: Thông tin, mô tả */}
         <div className="w-full md:w-1/3 flex flex-col justify-start">
           <p className="tracking-widest text-gray-500 mb-2 text-base mt-[40px]">
@@ -17,7 +17,11 @@ export const Services = () => {
             ngân sách. Chúng tôi đồng hành cùng khách hàng từ tư vấn đến hoàn
             thiện, mang lại sự an tâm trong từng hạng mục.
           </p>
-      
+          <div className="text-start mt-8 hidden md:inline-block" >
+            <button className="bg-amber-500/90 hover:bg-amber-600 text-white text-lg font-bold py-3 px-8 rounded-lg shadow transition">
+              Nhận tư vấn
+            </button>
+          </div>
         </div>
 
         {/* Bên phải: danh sách dịch vụ */}

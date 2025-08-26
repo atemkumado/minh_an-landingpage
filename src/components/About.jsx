@@ -5,23 +5,24 @@ export const About = () => {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <section className="flex flex-col md:flex-row  min-h-[70vh] gap-10 py-10 px-2 md:px-8 bg-gray-50 relative">
-      {/* Project image + Play Icon, bên trái lớn hơn */}
-      <div className="w-full md:w-3/5 flex justify-center items-center">
-        <div className="relative w-full max-w-3xl">
+    <section id='About' className="flex flex-col md:flex-row items-center min-h-[70vh] gap-10 py-10 px-2 md:px-12 bg-[#f7f7f7] relative">
+      {/* Bên trái: Ảnh lớn + Play */}
+      <div className="w-full md:w-3/5 flex justify-center md:justify-end items-center">
+        <div className="relative w-full max-w-2xl md:max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-2xl">
           <img
             src={assets.about_us}
             alt="Dự án tiêu biểu"
-            className="rounded-xl shadow-xl object-cover w-full h-[300px] md:h-[640px]"
+            className="object-cover w-full h-full"
           />
-          {/* Play button - gọn lại */}
+          {/* Nút play đặt chính giữa, ổn định cho mọi tỉ lệ */}
           <button
             onClick={() => setOpen(true)}
-            className="absolute inset-0 flex justify-center items-center"
+            className="absolute inset-0 flex justify-center items-center focus:outline-none"
+            tabIndex={0}
           >
-            <span className="bg-cyan-600 flex items-center justify-center rounded-full w-14 h-14 hover:bg-cyan-700 transition-colors">
+            <span className="bg-cyan-600 flex items-center justify-center rounded-full w-16 h-16 hover:bg-cyan-700 transition-colors shadow-lg ring-4 ring-white/30">
               <svg
-                className="w-7 h-7 text-white"
+                className="w-8 h-8 text-white pl-[3px]"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -32,70 +33,74 @@ export const About = () => {
         </div>
       </div>
 
-      {/* About Box phải, responsive, không fix width, bo góc đẹp */}
-      <div className="w-full md:w-2/5 md:max-w-md bg-white rounded-xl shadow-2xl py-8 px-6 mt-8 md:mt-0">
+      {/* Bên phải: Box giới thiệu nổi */}
+      <div className="w-full md:max-w-xl bg-white rounded-2xl shadow-2xl py-10 px-6 md:pl-12 md:py-14 md:-ml-24 relative z-10">
         <p className="text-sm tracking-widest text-gray-500 mb-2 uppercase">
           Giới Thiệu
         </p>
-        <h2 className="text-3xl font-bold mb-3 text-slate-900">Về Chúng Tôi</h2>
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 font-montserrat">
+          Về Chúng Tôi
+        </h2>
 
-        <p className="mb-3 text-gray-700">
+        <p className="mb-4 text-gray-700">
           M.A Renovation ra đời với mong muốn mang lại không gian sống mới mẻ và
           tiện nghi cho những ngôi nhà đã cũ. Chúng tôi tin rằng, một tổ ấm đẹp
           và gọn gàng sẽ giúp gia chủ tận hưởng cuộc sống trọn vẹn hơn.
         </p>
-        <p className="mb-3 text-gray-700">
+        <p className="mb-4 text-gray-700">
           Đi cùng phương châm <b>“Đổi mới không gian, an tâm chi phí”</b>, M.A
           Renovation luôn nỗ lực mang đến giải pháp cải tạo phù hợp, đảm bảo cả
           thẩm mỹ lẫn ngân sách. Khách hàng có thể yên tâm khi mỗi hạng mục đều
           được tư vấn rõ ràng, minh bạch và tối ưu.
         </p>
-        <p className="mb-3 text-gray-700">
+        <p className="mb-4 text-gray-700">
           Điểm khác biệt của chúng tôi nằm ở việc lắng nghe nhu cầu, đưa ra lựa
           chọn phù hợp với từng khách hàng và đồng hành đến khi không gian sống
           thật sự hoàn thiện. Chúng tôi không chỉ thi công, mà còn đồng hành để
           tái tạo lại “tổ ấm” cho bạn.
         </p>
 
-        <div className="flex items-center gap-3 mt-3">
+        <div className="flex items-center gap-3 mt-6">
           <img
             src={assets.founder}
             alt="Founder"
-            className="w-12 h-12 rounded-full object-cover"
+            className="w-14 h-14 rounded-full object-cover border-2 border-white shadow"
           />
           <div>
-            <div className="font-bold leading-none">M.A Renovation</div>
+            <div className="font-bold leading-none text-slate-900">
+              M.A Renovation
+            </div>
             <div className="text-xs text-gray-500">FOUNDER & CEO</div>
           </div>
         </div>
       </div>
 
       {/* YouTube Video Popup */}
-{open && (
-  <div
-    className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
-    onClick={() => setOpen(false)}
-  >
-    <div
-      className="relative"
-      onClick={e => e.stopPropagation()} // Chặn sự kiện lây lan lên overlay
-    >
-      <iframe
-        src="https://www.youtube.com/embed/xPkymyihX-Q?autoplay=1"
-        title="Project Video"
-        allow="autoplay"
-        allowFullScreen
-        className="w-[95vw] max-w-[900px] h-[54vw] max-h-[520px] rounded-2xl shadow-2xl"
-      ></iframe>
-      <button
-        onClick={() => setOpen(false)}
-        className="absolute -top-7 -right-4 rounded-full text-gray-300 px-3 py-2 shadow-lg bg-gray-600/30 font-merriweather hover:bg-gray-600/50 transition-colors" 
-      >
-        ✕
-      </button>
-    </div>
-  </div>
-)}
+      {open && (
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+          onClick={() => setOpen(false)}
+        >
+          <div
+            className="relative"
+            onClick={(e) => e.stopPropagation()} // Chặn sự kiện lây lan lên overlay
+          >
+            <iframe
+              src="https://www.youtube.com/embed/xPkymyihX-Q?autoplay=1"
+              title="Project Video"
+              allow="autoplay"
+              allowFullScreen
+              className="w-[95vw] max-w-[900px] h-[54vw] max-h-[520px] rounded-2xl shadow-2xl"
+            ></iframe>
+            <button
+              onClick={() => setOpen(false)}
+              className="absolute -top-7 -right-4 rounded-full text-gray-300 px-3 py-2 shadow-lg bg-gray-600/30 font-merriweather hover:bg-gray-600/50 transition-colors"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

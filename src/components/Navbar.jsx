@@ -25,7 +25,7 @@ const Navbar = () => {
                   Giới thiệu
                 </a>
                 <a
-                  href='#Service'
+                  href='#Services'
                   className='cursor-pointer hover:text-gray-400 rounded-full px-5 py-2 transition hover:bg-white/10 font-oswald uppercase font-bold'
                 >
                   Dịch vụ
@@ -46,7 +46,7 @@ const Navbar = () => {
           </div>
           <ul className='flex flex-col items-center justify-center gap-2 mt-2 px-6 text-lg font-medium '>
               <a  onClick={()=>setShowMenuMobile(false)} href="#About" className='px-4 py-2 rounded-full inline-block'>Giới thiệu</a>
-              <a  onClick={()=>setShowMenuMobile(false)} href="#Service" className='px-4 py-2 rounded-full inline-block'>Dịch vụ</a>
+              <a  onClick={()=>setShowMenuMobile(false)} href="#Services" className='px-4 py-2 rounded-full inline-block'>Dịch vụ</a>
               <a  onClick={()=>setShowMenuMobile(false)} href="#Projects" className='px-4 py-2 rounded-full inline-block'>Dự án</a>
           </ul>
         </div>

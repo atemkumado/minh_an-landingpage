@@ -34,7 +34,7 @@ export const Projects = () => {
 
   return (
     <section className="bg-gray-50 py-16 px-4" id="Projects">
-      <div className="max-w-6xl mx-auto">
+      <div className=" max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-2 font-montserrat tracking-tight">
           Dự án nổi bật
         </h2>
@@ -62,7 +62,7 @@ export const Projects = () => {
         </div>
         <div className="overflow-hidden">
           <div
-            className="flex gap-8 transition-transform duration-500 ease-in-out"
+            className="flex gap-6 transition-transform duration-500 ease-in-out"
             style={{
               transform: `translateX(-${(currentIndex * 100) / cardsPerView}%)`,
             }}
@@ -107,6 +107,9 @@ export const Projects = () => {
                     <p className="text-gray-500 text-sm">
                       {project.price} <span>|</span> {project.location}
                     </p>
+                    <p className="md:hidden text-blue-500 text-xs mt-1 font-medium">
+                      View
+                    </p>
                   </div>
                 </div>
               </div>
@@ -115,7 +118,7 @@ export const Projects = () => {
         </div>
         {/* Hiện CompareImage cho project được chọn */}
         {selected !== null && (
-          <div className="mx-auto bg-white rounded-2xl shadow-xl p-8">
+          <div className="mx-auto bg-white rounded-2xl shadow-xl p-8 w-full h-auto">
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-montserrat text-center">
               So sánh trước & sau: {projectsData[selected].name}
             </h3>

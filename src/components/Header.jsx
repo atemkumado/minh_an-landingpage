@@ -15,7 +15,7 @@ export const Header = () => {
         <h2 className='text-4xl sm:text-6xl md:text-[84px] inline-block font-oswald font-semibold mt-6'> AN TÂM CHI PHÍ</h2>
         <div className='space-x-6 mt-12'>
           <a href="#Projects" className='border border-white px-8 py-3 rounded font-semibold text-xl'>Dự án</a>
-          <a href="" className='bg-yellow-600 border border-yellow-600 hover:bg-yellow-700 hover:border-yellow-700 px-8 py-3 rounded font-semibold text-xl'>Liên hệ</a>
+          <a href="" className='bg-amber-500/90 border border-yellow-600 hover:bg-yellow-600 hover:border-yellow-600 px-8 py-3 rounded font-semibold text-xl'>Liên hệ</a>
         </div>
       </div>
     </div>

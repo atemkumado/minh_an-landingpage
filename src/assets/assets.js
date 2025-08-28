@@ -26,10 +26,10 @@ import project2_after from "./project2_after.jpg";
 
 import about_us from "./about_us.jpg";
 import founder from "./founder.png";
-import icon_service_plan from "./plan.png";
-import icon_service_build from "./build.png";
-import icon_service_design from "./design.png";
-import icon_service_install from "./install.png";
+import icon_service_plan from "./service_plan.png";
+import icon_service_build from "./service_build.png";
+import icon_service_design from "./service_design.png";
+import icon_service_install from "./service_install.png";
 
 export const assets = {
   logo,

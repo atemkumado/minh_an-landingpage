@@ -40,8 +40,8 @@ export const Projects = () => {
         </h2>
         <div className="w-16 h-1 bg-orange-400 rounded-full mx-auto mb-8"></div>
         <p className="text-center text-gray-500 mb-12 max-w-2xl mx-auto">
-          Minh An chuyên cải tạo, nâng cấp không gian sống và làm việc. Xem sự
-          khác biệt rõ rệt trước và sau khi cải tạo!
+          M.A Renovation chuyên cải tạo và nâng cấp không gian sống – làm việc.
+          Khám phá sự khác biệt rõ rệt trước và sau khi cải tạo!
         </p>
         {/* Danh sách card */}
         <div className="flex justify-end items-center mb-8">
@@ -75,6 +75,7 @@ export const Projects = () => {
               >
                 {/* Hình ảnh project */}
                 <img
+                  height={651}
                   className="w-full h-auto mb-14 rounded-xl transition group-hover:scale-105 group-hover:shadow-2xl"
                   src={project.image}
                   alt={project.title}

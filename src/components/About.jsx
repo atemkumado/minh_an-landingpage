@@ -5,7 +5,10 @@ export const About = () => {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <section id='About' className="flex flex-col md:flex-row items-center min-h-[70vh] gap-10 py-10 px-2 md:px-12 bg-[#f7f7f7] relative">
+    <section
+      id="About"
+      className="flex flex-col md:flex-row items-center min-h-[70vh] gap-10 py-10 px-2 md:px-12 bg-[#f7f7f7] relative"
+    >
       {/* Bên trái: Ảnh lớn + Play */}
       <div className="w-full md:w-3/5 flex justify-center md:justify-end items-center">
         <div className="relative w-full max-w-2xl md:max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-2xl">
@@ -43,21 +46,17 @@ export const About = () => {
         </h2>
 
         <p className="mb-4 text-gray-700">
-          M.A Renovation ra đời với mong muốn mang lại không gian sống mới mẻ và
-          tiện nghi cho những ngôi nhà đã cũ. Chúng tôi tin rằng, một tổ ấm đẹp
-          và gọn gàng sẽ giúp gia chủ tận hưởng cuộc sống trọn vẹn hơn.
+          M.A Renovation mang đến giải pháp cải tạo phù hợp, giúp gia chủ có
+          không gian sống mới mẻ – tiện nghi và an tâm chi phí.
         </p>
         <p className="mb-4 text-gray-700">
-          Đi cùng phương châm <b>“Đổi mới không gian, an tâm chi phí”</b>, M.A
-          Renovation luôn nỗ lực mang đến giải pháp cải tạo phù hợp, đảm bảo cả
-          thẩm mỹ lẫn ngân sách. Khách hàng có thể yên tâm khi mỗi hạng mục đều
-          được tư vấn rõ ràng, minh bạch và tối ưu.
+          Với phương châm <strong>“Đổi mới không gian, an tâm chi phí”</strong>,
+          chúng tôi luôn minh bạch trong tư vấn, tối ưu trong thi công và đồng
+          hành đến khi ngôi nhà trở thành “tổ ấm” hoàn thiện.
         </p>
         <p className="mb-4 text-gray-700">
-          Điểm khác biệt của chúng tôi nằm ở việc lắng nghe nhu cầu, đưa ra lựa
-          chọn phù hợp với từng khách hàng và đồng hành đến khi không gian sống
-          thật sự hoàn thiện. Chúng tôi không chỉ thi công, mà còn đồng hành để
-          tái tạo lại “tổ ấm” cho bạn.
+          Chúng tôi tin rằng, mỗi sự thay đổi dù nhỏ cũng góp phần nâng tầm chất
+          lượng cuộc sống cho gia chủ.
         </p>
 
         <div className="flex items-center gap-3 mt-6">

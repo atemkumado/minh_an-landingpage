@@ -13,17 +13,17 @@ export const Reasons = () => {
     },
     {
       title: "Thi công chuẩn tiến độ",
-      desc: "Giám sát & báo cáo định kỳ.",
+      desc: "Giám sát & báo cáo <span class='break-last'> định kỳ. </span>",
     },
     {
       title: "Bàn giao an tâm",
-      desc: "Nghiệm thu & bảo hành rõ ràng.",
+      desc: "Nghiệm thu & bảo hành <span class='break-last'> rõ ràng. </span>",
     },
   ];
 
   return (
     <div
-       className="w-full min-h-[600px] flex flex-col justify-center items-center relative p-8"
+      className="w-full min-h-[600px] flex flex-col justify-center items-center relative p-8"
       style={{
         backgroundImage: `url(${assets.reasons})`,
         backgroundRepeat: "no-repeat",
@@ -54,7 +54,10 @@ export const Reasons = () => {
               <h3 className="text-lg font-semibold mb-2 text-gray-900">
                 {item.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+              <p
+                className="text-gray-600 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: item.desc }}
+              ></p>
             </div>
           ))}
         </div>

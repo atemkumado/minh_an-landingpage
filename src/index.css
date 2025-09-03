@@ -31,3 +31,13 @@
 .font-outfit {
   font-family: 'Outfit', sans-serif;
 }
+
+.break-last {
+  display: inline;
+}
+
+@media (max-width: 480px) {
+  .break-last {
+    display: block;
+  }
+}

@@ -45,16 +45,16 @@ export const About = () => {
           Về Chúng Tôi
         </h2>
 
-        <p className="mb-4 text-gray-700">
+        <p className="mb-4 text-gray-700 des-mobile-90">
           M.A Renovation mang đến giải pháp cải tạo phù hợp, giúp gia chủ có
           không gian sống mới mẻ – tiện nghi và an tâm chi phí.
         </p>
-        <p className="mb-4 text-gray-700">
+        <p className="mb-4 text-gray-700 des-mobile-90">
           Với phương châm <strong>“Đổi mới không gian, an tâm chi phí”</strong>,
           chúng tôi luôn minh bạch trong tư vấn, tối ưu trong thi công và đồng
           hành đến khi ngôi nhà trở thành “tổ ấm” hoàn thiện.
         </p>
-        <p className="mb-4 text-gray-700">
+        <p className="mb-4 text-gray-700 des-mobile-90">
           Chúng tôi tin rằng, mỗi sự thay đổi dù nhỏ cũng góp phần nâng tầm chất
           lượng cuộc sống cho gia chủ.
         </p>

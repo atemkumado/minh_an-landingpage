@@ -143,22 +143,22 @@ export const testimonialsData = [
 export const SERVICES = [
   {
     title: "Lên kế hoạch & tư vấn",
-    desc: "Định hướng chi phí, vật liệu và<br />tiến độ rõ ràng, giúp khách hàng <br />chủ động trong quá trình cải tạo.",
-    icon: icon_service_plan, // hoặc đường dẫn svg tương ứng bạn có
+    desc: "Định hướng chi phí, vật liệu và<span class='break-last'> tiến độ rõ ràng, giúp khách hàng </span> chủ động trong quá trình cải tạo.",
+    icon: icon_service_plan,
   },
   {
     title: "Cải tạo & xây dựng không gian",
-    desc: "Tối ưu diện tích, bố trí lại công năng <br /> và thay đổi tổng thể để ngôi nhà <br /> trở nên tiện ích và hiện đại hơn.",
+    desc: "Tối ưu diện tích, bố trí lại công năng <span class='break-last'> và thay đổi tổng thể để ngôi nhà </span> trở nên tiện ích và hiện đại hơn.",
     icon: icon_service_build,
   },
   {
     title: "Thiết kế nội thất",
-    desc: "Đưa ra giải pháp thiết kế hài hòa,<br /> phù hợp với nhu cầu và ngân sách <br /> của từng khách hàng.",
+    desc: "Đưa ra giải pháp thiết kế hài hòa,<span class='break-last'>phù hợp với nhu cầu và ngân sách </span> của từng khách hàng.",
     icon: icon_service_design,
   },
   {
     title: "Thi công & lắp đặt nội thất",
-    desc: "Đảm bảo chất lượng, tiến độ và <br />  sự chỉn chu trong từng chi tiết thi công.",
+    desc: "Đảm bảo chất lượng, tiến độ và <span class='break-last'> sự chỉn chu trong từng chi tiết thi công</span>",
     icon: icon_service_install,
   },
 ];

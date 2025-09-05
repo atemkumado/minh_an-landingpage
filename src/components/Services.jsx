@@ -14,7 +14,7 @@ export const Services = () => {
             DỊCH VỤ CỦA CHÚNG TÔI
           </p>
           <h2 className="text-5xl font-bold mb-6 text-gray-900">DỊCH VỤ</h2>
-          <p className="mb-6 text-gray-600 text-lg">
+          <p className="mb-6 text-gray-600 text-lg subtitle-mobile-90">
             M.A Renovation cung cấp dịch vụ <br />
             cải tạo – thi công nội thất trọn gói, <br />
             giúp không gian cũ trở nên mới mẻ, <br />
@@ -46,7 +46,7 @@ export const Services = () => {
                 {item.title}
               </h3>
               <p
-                className="text-gray-500"
+                className="text-gray-500 des-mobile-90"
                 dangerouslySetInnerHTML={{ __html: item.desc }}
               ></p>
             </div>

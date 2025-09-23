@@ -15,13 +15,10 @@ export const Services = () => {
           </p>
           <h2 className="text-5xl font-bold mb-6 text-gray-900">DỊCH VỤ</h2>
           <p className="mb-6 text-gray-600 text-lg subtitle-mobile-90">
-            M.A Renovation cung cấp dịch vụ <br />
-            cải tạo – thi công nội thất trọn gói, <br />
-            giúp không gian cũ trở nên mới mẻ, <br />
-            tiện nghi và phù hợp với ngân sách. <br />
-            Chúng tôi đồng hành cùng gia chủ <br />
-            từ tư vấn đến hoàn thiện, mang lại <br />
-            sự an tâm trong từng hạng mục.
+            M.A Renovation cung cấp dịch vụ cải tạo – thi công nội thất trọn
+            gói, giúp không gian cũ trở nên mới mẻ, tiện nghi và phù hợp với
+            ngân sách. Chúng tôi đồng hành cùng gia chủ từ tư vấn đến hoàn
+            thiện, mang lại sự an tâm trong từng hạng mục.
           </p>
           <div className="text-start mt-8 hidden md:inline-block">
             <button className="bg-amber-500/90 hover:bg-amber-600 text-white text-lg font-bold py-3 px-8 rounded-lg shadow transition">
@@ -45,10 +42,7 @@ export const Services = () => {
               <h3 className="text-xl font-bold text-gray-800 mb-1 mt-3">
                 {item.title}
               </h3>
-              <p
-                className="text-gray-500 des-mobile-90"
-                dangerouslySetInnerHTML={{ __html: item.desc }}
-              ></p>
+              <p className="text-gray-500 des-mobile-90">{item.desc}</p>
             </div>
           ))}
         </div>

@@ -1,26 +1,7 @@
 import React from "react";
-import { assets, SERVICES } from "../assets/assets";
+import { assets, REASONS } from "../assets/assets";
 
 export const Reasons = () => {
-  const reasons = [
-    {
-      title: "Kế hoạch rõ ràng",
-      desc: "Tư vấn đúng nhu cầu.",
-    },
-    {
-      title: "Chi phí minh bạch",
-      desc: "Không lo phát sinh.",
-    },
-    {
-      title: "Thi công chuẩn tiến độ",
-      desc: "Giám sát & báo cáo <span class='break-last'> định kỳ. </span>",
-    },
-    {
-      title: "Bàn giao an tâm",
-      desc: "Nghiệm thu & bảo hành <span class='break-last'> rõ ràng. </span>",
-    },
-  ];
-
   return (
     <div
       className="w-full min-h-[600px] flex flex-col justify-center items-center relative p-8"
@@ -43,7 +24,7 @@ export const Reasons = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {reasons.map((item, idx) => (
+          {REASONS.map((item, idx) => (
             <div
               key={idx}
               className="flex flex-col items-center text-center bg-white rounded-3xl shadow-md p-6 hover:shadow-xl hover:scale-105 transition-transform duration-300 min-h-[200px]"

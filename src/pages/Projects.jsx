@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { assets, projectsData } from "../assets/assets";
-import CompareImage from "react-compare-image";
+import { CompareImageWithLoading } from './../components/CompareImageWithLoading';
 
 export const Projects = () => {
   const [selected, setSelected] = useState(null);
@@ -31,7 +31,7 @@ export const Projects = () => {
       prevIndex === 0 ? projectsData.length - 1 : prevIndex - 1
     );
   };
-
+ 
   return (
     <section className="bg-gray-50 py-16 px-4" id="Projects">
       <div className=" max-w-7xl mx-auto">
@@ -123,7 +123,7 @@ export const Projects = () => {
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-montserrat text-center">
               So sánh trước & sau: {projectsData[selected].name}
             </h3>
-            <CompareImage
+            <CompareImageWithLoading
               leftImage={projectsData[selected].before}
               rightImage={projectsData[selected].after}
               leftImageLabel="Trước"

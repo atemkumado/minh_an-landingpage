@@ -28,3 +28,7 @@ package-lock.json
 node_modules
 dump.rdb
 .vercel
+
+# Ignore environment variables files
+.env*
+!.env.example

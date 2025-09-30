@@ -1,10 +1,11 @@
 import React from 'react'
-import { Header } from './components/Header'
-import { About } from './components/About'
-import { Projects } from './components/Projects'
-import { Services } from './components/Services'
-import { Reasons } from './components/Reasons'
-import { Contact } from './components/Contact'
+import { Header } from './pages/Header'
+import { About } from './pages/About'
+import { Projects } from './pages/Projects'
+import { Services } from './pages/Services'
+import { Reasons } from './pages/Reasons'
+import { Contact } from './pages/Contact'
+import { Footer } from './pages/Footer'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Reasons/>
       <Projects/>
       <Contact/>
+      <Footer/>
     </div>
   )
 }

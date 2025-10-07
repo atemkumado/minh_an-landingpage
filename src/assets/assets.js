@@ -1,4 +1,4 @@
-import logo from "./logo.png";
+import logo from "./logo.svg";
 import logo_no_text from "./logo_no_text.png";
 import logo_dark from "./logo_dark.svg";
 import cross_icon from "./cross_icon.svg";
@@ -12,9 +12,6 @@ import project_img_4 from "./project_img_4.jpg";
 import project_img_5 from "./project_img_5.jpg";
 import project_img_6 from "./project_img_6.jpg";
 import reasons from "./reasons.png";
-import profile_img_1 from "./profile_img_1.png";
-import profile_img_2 from "./profile_img_2.png";
-import profile_img_3 from "./profile_img_3.png";
 
 import project_img_1 from "./project1.png";
 import project1_before from "./project1_before.png";
@@ -45,9 +42,6 @@ export const assets = {
   header_img,
   brand_img,
   about_us,
-  project_img_2,
-  project_img_3,
-  project_img_4,
   reasons,
   left_arrow,
   right_arrow,
@@ -133,32 +127,6 @@ export const REASONS = [
     },
   ];
 
-export const testimonialsData = [
-  {
-    name: "Donald Jackman",
-    title: "Marketing Manager",
-    image: profile_img_1,
-    alt: "Portrait of Donald Jackman",
-    rating: 5,
-    text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched.",
-  },
-  {
-    name: "Richard Nelson",
-    title: "UI/UX Designer",
-    image: profile_img_2,
-    alt: "Portrait of Richard Nelson",
-    rating: 4,
-    text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched.",
-  },
-  {
-    name: "James Washington",
-    title: "Co-Founder",
-    image: profile_img_3,
-    alt: "Portrait of James Washington",
-    rating: 5,
-    text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched.",
-  },
-];
 
 export const SERVICES = [
   {

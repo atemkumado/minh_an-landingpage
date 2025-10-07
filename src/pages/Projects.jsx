@@ -119,7 +119,7 @@ export const Projects = () => {
         </div>
         {/* Hiện CompareImage cho project được chọn */}
         {selected !== null && (
-          <div className="mx-auto bg-white rounded-2xl shadow-xl p-8 w-full h-auto">
+          <div className="mx-auto bg-white rounded-2xl shadow-xl p-8 w-full max-w-md md:max-w-2xl lg:max-w-3xl">
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-montserrat text-center">
               So sánh trước & sau: {projectsData[selected].name}
             </h3>

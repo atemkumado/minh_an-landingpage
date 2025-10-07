@@ -26,7 +26,9 @@ export const CompareImageWithLoading = (props) => {
         <img src={props.leftImage} alt="" style={{ display: "none" }} onLoad={handleImgLoad} />
         <img src={props.rightImage} alt="" style={{ display: "none" }} onLoad={handleImgLoad} />
         {/* Show CompareImage when loaded */}
-        {!loading && <CompareImage {...props} />}
+        {!loading && <CompareImage 
+        {...props}
+        />}
       </div>
     );
 }

@@ -44,9 +44,9 @@ export const Contact = () => {
       </p>
       <form
         onSubmit={handleSubmit}
-        className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-2xl flex flex-col gap-6 border border-gray-100"
+        className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-2xl flex flex-col gap-6 border border-gray-100 text-gray-800"
       >
-        <div className="flex flex-warp">
+        <div className="flex flex-wrap">
           <div className="w-full md:w-1/2 text-left">
             Họ tên
             <input
@@ -56,7 +56,7 @@ export const Contact = () => {
               className="w-full py-3 px-4 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-400 transition"
             />
           </div>
-          <div className="w-full md:w-1/2 text-left md:pl-4">
+          <div className="w-full md:w-1/2 text-left md:pl-4 mt-3 md:mt-0">
             Email
             <input
               name="email"
@@ -67,7 +67,7 @@ export const Contact = () => {
           </div>
         </div>
 
-        <div className="flex flex-warp">
+        <div className="flex flex-wrap">
           <div className="w-full md:w-1/2 text-left">
             Số điện thoại
             <input
@@ -77,12 +77,12 @@ export const Contact = () => {
               className="w-full py-3 px-4 mt-2 border border-gray-300 rounded focus:outline-none focus:border-orange-400 transition"
             />
           </div>
-          <div className="w-full md:w-1/2 text-left md:pl-4">
+          <div className="w-full md:w-1/2 text-left md:pl-4 mt-3 md:mt-0">
             Nhu cầu
             <select
               name="demand"
               required
-              className="w-full py-3 px-4 mt-2 border border-gray-300 rounded focus:outline-none focus:border-orange-400 transition"
+              className="w-full py-[12px] px-4 mt-2 border border-gray-300 rounded focus:outline-none focus:border-orange-400 transition appearance-none"
               defaultValue=""
             >
                 <option value="" disabled hidden> -- Chọn -- </option>

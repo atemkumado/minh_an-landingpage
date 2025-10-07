@@ -5,27 +5,26 @@ import { FaFacebook, FaInstagram, FaMailBulk } from "react-icons/fa";
 export const Footer = () => {
   return (
     <footer className="bg-gray-50 border-t border-gray-200 mt-20">
-      <div className="max-w-3xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="max-w-3xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Logo & Brand */}
         <div className="flex items-center gap-3">
           <img src={assets.logo} alt="Minh An" className="w-30 h-30 rounded" />
         </div>
         {/* Info */}
         <div className="text-gray-600 text-center md:text-left text-sm">
-          <div>Địa chỉ: 80 Đường Phạm Hùng, Quận 8, HCM</div>
           <div>
             Hotline:{" "}
-            <a href="tel:0901234567" className="text-orange-500 font-semibold">
-              0901 234 567
+            <a href="tel:0943268248" className="text-orange-500 font-semibold">
+              0943 268 248
             </a>
           </div>
           <div>
             Email:{" "}
             <a
-              href="mailto:info@minhan.com"
+              href="mailto:marenovation.vn@gmail.com"
               className="text-orange-500 font-semibold"
             >
-              info@minhan.com
+              marenovation.vn@gmail.com
             </a>
           </div>
         </div>
@@ -55,7 +54,7 @@ export const Footer = () => {
               className="w-6 h-6 hover:scale-110 transition"
             />
           </a>
-          <a href="mailto:info@minhan.com" aria-label="Email">
+          <a href="mailto:marenovation.vn@gmail.com" aria-label="Email">
             <FaMailBulk
               src="/mail.svg"
               alt="Email"

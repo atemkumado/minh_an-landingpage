@@ -56,3 +56,15 @@
     font-size: 82%;
   }
 }
+
+select {
+  /* Ẩn mũi tên trên hầu hết các trình duyệt */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Riêng cho IE10+ */
+select::-ms-expand {
+  display: none;
+}

@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className='absolute top-0 left-0 w-full z-10'>
         <div className='container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent'>
-            <div><img src={assets.logo} alt="" className='w-20 md:w-30' /></div>
+            <div><img src={assets.logo} alt="" className='pt-2 w-20 md:w-36' /></div>
             <ul className='hidden md:flex gap-7 text-white'>
                 <a
                   href='#About'

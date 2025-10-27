@@ -105,7 +105,7 @@ export const Projects = () => {
                     <h2 className="text-xl font-semibold text-gray-800">
                       {project.title}
                     </h2>
-                    <p className="text-gray-500 text-sm">
+                    <p className="text-gray-500 text-xs">
                       {project.price} <span>|</span> {project.location}
                     </p>
                     <p className="md:hidden text-blue-500 text-xs mt-1 font-medium">

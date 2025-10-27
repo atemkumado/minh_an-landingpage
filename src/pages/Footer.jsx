@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="max-w-3xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Logo & Brand */}
         <div className="flex items-center gap-3">
-          <img src={assets.logo} alt="Minh An" className="w-30 h-30 rounded" />
+          <img src={assets.logo} alt="Minh An" className="w-32 md:w-36" />
         </div>
         {/* Info */}
         <div className="text-gray-600 text-center md:text-left text-sm">
@@ -31,7 +31,7 @@ export const Footer = () => {
         {/* Social */}
         <div className="flex gap-4">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/marenovation.vn/"
             target="_blank"
             rel="noopener"
             aria-label="Facebook"

@@ -8,8 +8,6 @@ import left_arrow from "./left_arrow.svg";
 import right_arrow from "./right_arrow.svg";
 import header_img from "./header_img.jpg";
 import brand_img from "./brand_img.png";
-import project_img_4 from "./project_img_4.jpg";
-import project_img_5 from "./project_img_5.jpg";
 import project_img_6 from "./project_img_6.jpg";
 import reasons from "./reasons.png";
 
@@ -24,6 +22,14 @@ import project2_after from "./project2_after.png";
 import project_img_3 from "./project3.png";
 import project3_before from "./project3_before.png";
 import project3_after from "./project3_after.png";
+
+import project_img_4 from "./project4.png";
+import project4_before from "./project4_before.png";
+import project4_after from "./project4_after.png";
+
+// import project_img_5 from "./project5.png";
+// import project5_before from "./project5_before.png";
+// import project5_after from "./project5_after.png";
 
 import about_us from "./about_us.jpg";
 import founder from "./founder.png";
@@ -81,32 +87,14 @@ export const projectsData = [
     desc: "Cải tạo căn hộ cũ thành không gian sống hiện đại, tối ưu ánh sáng và công năng.",
   },
   {
-    title: "Central Square",
-    price: "$2,50,000",
-    location: "Los Angeles",
+    title: "Nhà phố",
+    price: "Phòng khách",
+    location: "Cải tạo không gian",
     image: project_img_4,
-    before: project2_before,
-    after: project2_after,
+    before: project4_before,
+    after: project4_after,
     desc: "Biến đổi nhà phố truyền thống thành tổ ấm tiện nghi, sang trọng.",
-  },
-  {
-    title: "Vista Verde",
-    price: "$2,50,000",
-    location: "San Francisco",
-    image: project_img_5,
-    before: project1_before,
-    after: project1_after,
-    desc: "Cải tạo căn hộ cũ thành không gian sống hiện đại, tối ưu ánh sáng và công năng.",
-  },
-  {
-    title: "Serenity Suites",
-    price: "$2,50,000",
-    location: "Chicago",
-    image: project_img_6,
-    before: project2_before,
-    after: project2_after,
-    desc: "Biến đổi nhà phố truyền thống thành tổ ấm tiện nghi, sang trọng.",
-  },
+  }
 ];
 export const REASONS = [
     {

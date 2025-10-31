@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import logo_no_text from "./logo_no_text.png";
 import logo_dark from "./logo_dark.svg";
 import cross_icon from "./cross_icon.svg";
@@ -8,7 +8,6 @@ import left_arrow from "./left_arrow.svg";
 import right_arrow from "./right_arrow.svg";
 import header_img from "./header_img.jpg";
 import brand_img from "./brand_img.png";
-import project_img_6 from "./project_img_6.jpg";
 import reasons from "./reasons.png";
 
 import project_img_1 from "./project1.png";
@@ -27,9 +26,13 @@ import project_img_4 from "./project4.png";
 import project4_before from "./project4_before.png";
 import project4_after from "./project4_after.png";
 
-// import project_img_5 from "./project5.png";
-// import project5_before from "./project5_before.png";
-// import project5_after from "./project5_after.png";
+import project_img_5 from "./project5.png";
+import project5_before from "./project5_before.png";
+import project5_after from "./project5_after.png";
+
+import project_img_6 from "./project6.png";
+import project6_before from "./project6_before.png";
+import project6_after from "./project6_after.png";
 
 import about_us from "./about_us.jpg";
 import founder from "./founder.png";
@@ -60,6 +63,15 @@ export const assets = {
 
 export const projectsData = [
   {
+    title: "Nhà phố",
+    price: "Bếp",
+    location: "Cải tạo không gian",
+    image: project_img_3,
+    before: project3_before,
+    after: project3_after,
+    desc: "Cải tạo căn hộ cũ thành không gian sống hiện đại, tối ưu ánh sáng và công năng.",
+  },
+  {
     title: "Căn hộ 2PN",
     price: "Phòng ngủ",
     location: "Tối ưu tiện nghi",
@@ -77,14 +89,15 @@ export const projectsData = [
     after: project2_after,
     desc: "Biến đổi nhà phố truyền thống thành tổ ấm tiện nghi, sang trọng.",
   },
+  
   {
-    title: "Nhà phố",
-    price: "Bếp",
+    title: "Nhà cấp 4",
+    price: "Cầu thang",
     location: "Cải tạo không gian",
-    image: project_img_3,
-    before: project3_before,
-    after: project3_after,
-    desc: "Cải tạo căn hộ cũ thành không gian sống hiện đại, tối ưu ánh sáng và công năng.",
+    image: project_img_6,
+    before: project6_before,
+    after: project6_after,
+    desc: "Biến đổi nhà phố truyền thống thành tổ ấm tiện nghi, sang trọng.",
   },
   {
     title: "Nhà phố",
@@ -94,7 +107,17 @@ export const projectsData = [
     before: project4_before,
     after: project4_after,
     desc: "Biến đổi nhà phố truyền thống thành tổ ấm tiện nghi, sang trọng.",
-  }
+  },
+   {
+    title: "Nhà phố",
+    price: "Cầu thang",
+    location: "Cải tạo không gian",
+    image: project_img_5,
+    before: project5_before,
+    after: project5_after,
+    desc: "Biến đổi nhà phố truyền thống thành tổ ấm tiện nghi, sang trọng.",
+  },
+
 ];
 export const REASONS = [
     {

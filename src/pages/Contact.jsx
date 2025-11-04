@@ -122,7 +122,7 @@ export const Contact = () => {
             <p className="text-gray-700 mb-6">
               Thông tin đã được gửi thành công.
               <br />
-              Minh An sẽ liên hệ lại với bạn trong thời gian sớm nhất.
+              M.A Renovation sẽ liên hệ lại với bạn trong thời gian sớm nhất.
             </p>
             <button
               onClick={closePopup}

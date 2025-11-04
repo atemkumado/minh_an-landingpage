@@ -64,7 +64,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="text-center text-xs text-gray-400 py-4 border-t border-gray-100">
-        © {new Date().getFullYear()} Minh An Interior. All rights reserved.
+        © {new Date().getFullYear()} M.A Renovation Interior. All rights reserved.
       </div>
     </footer>
   );

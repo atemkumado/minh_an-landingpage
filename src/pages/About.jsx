@@ -91,12 +91,6 @@ export const About = () => {
               allowFullScreen
               className="w-[95vw] max-w-[900px] h-[54vw] max-h-[520px] rounded-2xl shadow-2xl"
             ></iframe>
-            <button
-              onClick={() => setOpen(false)}
-              className="absolute -top-7 -right-4 rounded-full text-gray-300 px-3 py-2 shadow-lg bg-gray-600/30 font-merriweather hover:bg-gray-600/50 transition-colors"
-            >
-              ✕
-            </button>
           </div>
         </div>
       )}

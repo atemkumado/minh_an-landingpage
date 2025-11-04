@@ -39,7 +39,7 @@ export const Contact = () => {
         Liên hệ <span className="text-orange-500">M.A RENOVATION</span>
       </h1>
       <p className="text-gray-600 mb-12">
-        Hãy để lại thông tin, Minh An sẽ liên hệ lại với bạn trong thời gian sớm
+        Hãy để lại thông tin, M.A Renovation sẽ liên hệ lại với bạn trong thời gian sớm
         nhất!
       </p>
       <form

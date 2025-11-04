@@ -85,7 +85,7 @@ export const About = () => {
             onClick={(e) => e.stopPropagation()} // Chặn sự kiện lây lan lên overlay
           >
             <iframe
-              src="https://www.youtube.com/embed/xPkymyihX-Q?autoplay=1"
+              src="https://www.youtube.com/embed/p2LNd_7cMa8?autoplay=1"
               title="Project Video"
               allow="autoplay"
               allowFullScreen

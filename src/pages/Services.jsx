@@ -21,9 +21,9 @@ export const Services = () => {
             thiện, mang lại sự an tâm trong từng hạng mục.
           </p>
           <div className="text-start mt-8 hidden md:inline-block">
-            <button href="#Contact" className="bg-amber-500/90 hover:bg-amber-600 text-white text-lg font-bold py-3 px-8 rounded-lg shadow transition">
+            <a href="#Contact" className="bg-amber-500/90 hover:bg-amber-600 text-white text-lg font-bold py-3 px-8 rounded-lg shadow transition">
               Nhận tư vấn
-            </button>
+            </a>
           </div>
         </div>
 

@@ -59,6 +59,7 @@ export const assets = {
   icon_service_build,
   icon_service_design,
   icon_service_install,
+  project4_after
 };
 
 export const projectsData = [

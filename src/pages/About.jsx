@@ -13,7 +13,7 @@ export const About = () => {
       <div className="w-full md:w-3/5 flex justify-center md:justify-end items-center">
         <div className="relative w-full max-w-2xl md:max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-2xl">
           <img
-            src={assets.about_us}
+            src={assets.project4_after}
             alt="Dự án tiêu biểu"
             className="object-cover w-full h-full"
           />

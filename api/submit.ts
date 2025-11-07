@@ -5,14 +5,13 @@ export default async function handler(req: any, res: any) {
   const { name, email, phone, demand, message } = req.body;
 
   // Gửi lên Google Form
-  const formUrl =
-    "https://docs.google.com/forms/u/0/d/e/1FAIpQLScUd-MHhkhGVgOTaQhSkSPLKh5L5zYVOJc0804ooy-Fj8YfYA/formResponse";
+  const formUrl = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSfOdm882ukGEXdYeVnGbhSeohWDlnmSR02sxQmzUoHE7feJwg/formResponse";
   const params = new URLSearchParams();
   params.append("entry.2005620554", name);
   params.append("entry.1045781291", email);
   params.append("entry.1166974658", phone);
-  params.append("entry.1065046570", demand);
-  params.append("entry.839337160", message);
+  params.append("entry.839337160", demand);
+  params.append("entry.1546098971", message);
 
   try {
     const response = await fetch(formUrl, {

@@ -9,7 +9,6 @@ export function initializeGoogleAnalytics() {
     window.dataLayer.push(arguments);
   }
   window.gtag = gtag;
-  console.log("Google Analytics initialized");
   gtag("js", new Date());
   gtag("config", "G-PPD866GVVY");
 }
